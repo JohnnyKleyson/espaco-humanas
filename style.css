@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*navbar*/
+
+.logo-container {
+  flex: 1;
+}
+.logo-txt {
+  font-size: 19px;
+  color: #fff;
+  font: italic;
+}
+.container {
+  width: 100%;
+  height: 100px; /* I have changed it 50px to 100px*/
+  float: left;
+  margin-top: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+li,
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.links {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+.link {
+  margin: 15px;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #0a2229;
+}
+
+.links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.links li a:hover {
+  color: #12cad6;
+}
+
+/*banner*/
+.banner {
+  background: url("./img/scholl.jpg") no-repeat center top;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  min-height: 580px;
+  position: relative;
+}
+.container-ban {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+.bg-color {
+  background-color: RGBA(12, 11, 11, 0.82);
+  min-height: 580px;
+}
+.big-text {
+  padding-bottom: 8px;
+  font-size: 35px;
+}
+.big-text p {
+  margin: 0 0 10px;
+}
+
+.text-dec {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+.text-border {
+  text-align: center;
+  border: 5px solid #12cad6;
+  display: inline-block;
+  margin-top: 150px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.intro-para {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  color: #fff;
+  margin-top: 30px;
+}
+.small-text {
+  font-size: 16px;
+}
+.small-text p {
+  margin: 0 0 10px;
+}
+
+.btn {
+  background-color: #12cad6;
+  color: #fff;
+  margin-top: 10px;
+  transition: 0.5s linear;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #11737a;
+}
+
+/*features*/
+.services-section {
+  font-family: "Montserrat", sans-serif;
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+}
+.inner-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title {
+  text-align: center;
+  color: rgb(87, 83, 83);
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+}
+.border {
+  width: 160px;
+  height: 2px;
+  background: #12cad6;
+  margin: 40px auto;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box {
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: rgb(87, 83, 83);
+  cursor: pointer;
+}
+
+.service-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #12cad6;
+  color: #12cad6;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i {
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon {
+  background: #12cad6;
+  color: white;
+}
+.service-title {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+/*parallax*/
+.parallax {
+  opacity: 5.5;
+  font-family: "Montserrat", sans-serif;
+  background: url(./img/02.jpg);
+  height: 100%;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  position: relative;
+  opacity: 0.8;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+/*parallax content*/
+.parallax-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 40px 10px;
+}
+.parallax-content h2 {
+  text-shadow: 2px 2px black;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.parallax-content h3 {
+  text-shadow: 1px 2px black;
+  color: #fff;
+  text-align: left;
+  padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.btn {
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  width: auto;
+  border: none;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.cronograma {
+  margin-top: 10px;
+}
+.btn-primary {
+  background-color: #11737a;
+  border: 2px solid white;
+}
+.btn-primary:hover {
+  background-color: #0d4246;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+/*meet our team*/
+.container-team {
+  color: #11737a;
+}
+.profs {
+  margin: 20px 40px;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 400ms;
+}
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: rgb(153, 153, 153);
+}
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/*PRICE TABLE*/
+.price-general {
+  background-color: #05848a;
+}
+
+.pricing-table {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card {
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: 0.3s linear;
+}
+
+.pricing-card-header {
+  background-color: #12cad6;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+  box-shadow: 0 0 0 26em #12cad6;
+}
+
+.price {
+  font-size: 70px;
+  color: #12cad6;
+  margin: 40px 0;
+  transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+  color: #fff;
+}
+
+.pricing-card li {
+  color: black;
+  font-size: 16px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #0fbcf9;
+  color: #0fbcf9;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+.order-btn:hover {
+  background-color: #0fbcf9;
+  color: #fff;
+}
+
+.maps {
+  width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .pricing-card {
+    flex: 50%;
+  }
+  .service-box {
+    max-width: 45%;
+  }
+  .heading {
+    font-size: 40px;
+    text-align: center;
+  }
+  .profiles {
+    margin: 20px 0px;
+  }
+  .profile p {
+    margin: 20px 10px 80px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .parallax-content {
+    flex: 100%;
+  }
+  .service-box {
+    max-width: 100%;
+  }
+  .parallax {
+    max-width: 100%;
+    min-height: auto;
+  }
+}

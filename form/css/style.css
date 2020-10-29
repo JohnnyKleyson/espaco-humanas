@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+/*HEADER*/
+
+header {
+  letter-spacing: 0.8px;
+  background-color: #568694;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*BODY CONTENT*/
+section {
+  opacity: 0.8;
+  background: url(../imagens/000.jpg);
+  padding: 25px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formContainer {
+  max-width: 230px;
+  background-color: #ffffffbb;
+  padding: 20px;
+  float: right;
+}
+
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.marginbottom {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+#sbmt {
+  color: white;
+  background-color: #408294;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#sbmt:hover {
+  background-color: #48c5ce;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #0a2229;
+  padding: 40px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.picture {
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.descrição {
+  color: white;
+  display: inline-block;
+  max-width: 40%;
+  margin-left: 40px;
+  text-align: left;
+}
+.descrição p,
+.descrição h3 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .picture {
+    align-content: center;
+    width: 200px;
+  }
+  .descrição {
+    display: inline;
+    text-align: center;
+  }
+}
