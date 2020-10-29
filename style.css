@@ -300,8 +300,8 @@ header {
 }
 .heading {
   text-align: center;
-  margin-bottom: 10px;
-  font-size: 60px;
+
+  font-size: 45px;
 }
 .profiles {
   display: flex;
