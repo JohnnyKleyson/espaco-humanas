@@ -18,9 +18,11 @@ html {
   flex: 1;
 }
 .logo-txt {
+  display: inline-block;
   font-size: 19px;
   color: #fff;
   font: italic;
+  cursor: pointer;
 }
 .container {
   width: 100%;
@@ -256,7 +258,7 @@ header {
   padding-bottom: 1rem;
 }
 .parallax-content h3 {
-  text-shadow: 1px 2px black;
+  text-shadow: 2px 2px black;
   color: #fff;
   text-align: left;
   padding-bottom: 24px;
@@ -282,11 +284,11 @@ header {
   margin-top: 10px;
 }
 .btn-primary {
-  background-color: #11737a;
+  background-color: #12cad6;
   border: 2px solid white;
 }
 .btn-primary:hover {
-  background-color: #0d4246;
+  background-color: #1ba2ac;
   color: #fff;
   transition: 0.5s ease;
 }
@@ -471,4 +473,9 @@ header {
     max-width: 100%;
     min-height: auto;
   }
+}
+@media screen and (max-width: 768px) {
+  .user-name, .profile p, .profile  {
+    text-align: center;
+ 
 }
