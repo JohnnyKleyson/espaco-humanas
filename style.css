@@ -422,9 +422,79 @@ header {
   background-color: #0fbcf9;
   color: #fff;
 }
-
-.maps {
+/*footer maps*/
+.contact-in {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contact-map {
   width: 100%;
+  height: auto;
+  flex: 50%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-dados {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-dados h1{
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.contact-form-txtarea{
+  width: 100%;
+  height: 130px;
+  color :#000;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-txt::placeholder{
+  color: #aaa;
+}
+.contact-form-txt{
+  width: 100%;
+  height: 40px;
+  color :#000;
+  border: 1px solid #bcbcbc;
+  border-radius: 50px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-btn{
+  outline: none;
+  border-radius: 50px ;
+  background: #0fbcf9;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+ 
+  align-content: center;
+  transition: 0.8s ease;
+}
+
+.contact-form-btn:hover{
+  background-color:#05848a;
 }
 
 @media screen and (max-width: 1150px) {
